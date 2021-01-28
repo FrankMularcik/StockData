@@ -1,2 +1,2 @@
 #This file is the key file that you download from the google developer site when you authorize your account to be edited with gspread.
-#You must place this in the folder that your 'main.py' is located or else redirect using os.chdir()
+#You must place this in the folder that your 'stock_data.py' is located or else redirect using os.chdir()
