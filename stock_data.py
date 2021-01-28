@@ -7,10 +7,12 @@ import os
 import yahoo_fin.stock_info as si
 from oauth2client.service_account import ServiceAccountCredentials
 
+#my specific director, will probably need to change it for yours
 os.chdir(r"C:\Users\mular\Python")
 
 scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
+#'Sheets API key.json' is the name of the authorization file that you download from your google developer account when you set it up
 creds =  ServiceAccountCredentials.from_json_keyfile_name('Sheets API key.json', scope)
 
 client = gspread.authorize(creds)
